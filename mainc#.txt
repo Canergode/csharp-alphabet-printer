@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AlphabetPrinter 
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            PrintAlphabet();
+            Console.ReadLine();
+        }
+
+        private static void PrintAlphabet()
+        {
+            // Loop from ASCII value of 'A' to 'Z'
+            for(int i='A';i<='Z';i++)
+            {
+                Console.Write((char)i + " ");
+            }
+        }
+    }
+
+}
